@@ -10,9 +10,11 @@ ini_set('display_errors', 'on');
 
 require_once('autoload.php');
 
+use \Hogwarts\Professor;
+
 $hogwarts = new Hogwarts();
-$professor = new Hogwarts\Professor();
+$professor = new Professor();
 $student = new Hogwarts\Student();
 
-$professorSchedule = new \Hogwarts\Professor\Schedule();
+$professorSchedule = new Professor\Schedule();
 $studentSchedule = new \Hogwarts\Student\Schedule();
